@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def lista_despesas(request):
+    return render(request, 'despesas.html')
