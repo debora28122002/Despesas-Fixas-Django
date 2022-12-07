@@ -1,5 +1,31 @@
 {% extends "model-page.html" %}
 
 {% block content %}
+    <br><h5 class="text-despesa">Olá! Aqui estão as suas Despesas Fixas Cadastradas:</h5><br>
 
+    <table>
+        <tr>
+            <th> Despesa </th>
+            <th> Preço </th>
+        </tr>
+        {% for despesa in despesas %}
+            <tr>         
+                <td> {{despesa.nome_despesa}} </td>
+                <td> R$ {{despesa.preco}}
+                    <a href = "despesa/?id={{despesa.id}}">
+                        <img src="https://www.bing.com/th?id=OIP.Ru4NpgJDIf2hRLBjKXGipgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="25px">
+                    </a>
+                    <a href="despesa/delete/{{despesa.id}}">
+                        <img src="https://th.bing.com/th/id/R.bf8087446f09f75d89eaa7c5264c6940?rik=m74tceOynr%2fmaA&riu=http%3a%2f%2ficon-icons.com%2ficons2%2f37%2fPNG%2f512%2fdelete_4219.png&ehk=f309I7Bx4sg6LgflIhVdHzdeB5d9EbFCh%2biSW9qcScM%3d&risl=&pid=ImgRaw&r=0" width="22px">
+                    </a>
+                </td>    
+            </tr>
+        {% endfor %}
+    </table><br><br>
+    
+    <div class="text-center">
+        <a href = "despesa/">
+            <button type="button" class="btn btn-outline-dark">Nova Despesa</button><br>
+        </a>
+    </div><br><br>
 {% endblock %}

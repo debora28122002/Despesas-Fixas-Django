@@ -1,0 +1,44 @@
+.header{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15pt;
+    margin:auto;
+    display:block;
+    background-color: #c1a2a0;
+}
+
+.footer{
+    text-align: center;
+    background-color: #c1a2a0;
+}
+
+.img_header{
+    margin-top: 3%;
+}
+
+.margin-page{
+    margin: 2% 3% 2% 3%;
+}
+
+.text-despesa{
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 13pt;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #725b75;
+    color: white
+}
+
+.nova_despesa{
+    margin: 5% 35% 5% 35%;
+}
